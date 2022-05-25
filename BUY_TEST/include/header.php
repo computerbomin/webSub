@@ -1,24 +1,24 @@
 <?php
-    include $_SERVER['DOCUMENT_ROOT']."/project/webSub/BUY_TEST/include/db.php";
+    include $_SERVER['DOCUMENT_ROOT']."/project/webSub/test1/include/db.php";
 ?>
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
     <title>땡땡 쇼핑</title>
-    <link rel="stylesheet" href="/project/webSub/BUY_TEST/css/common.css" />
+    <link rel="stylesheet" href="/project/webSub/test1/css/common.css" />
 </head>
 <body>
 <header>
     <div id="header_in">
         <div id="logo">
-            <img src="/project/webSub/BUY_TEST/imgs/logo.png" alt="logo" title="logo" />
+            <img src="/project/webSub/test1/img/logo.png" alt="logo" title="logo" />
         </div>
         <form action="" method="get">
             <div id="search_bar">
                 <input type="text" />
             </div>
             <div id="search_bt">
-                <img src="/project/webSub/BUY_TEST/imgs/search_bt.png" alt="search_bt" title="search_bt" />
+                <img src="/project/webSub/test1/img/search_bt.png" alt="search_bt" title="search_bt" />
             </div>
         </form>
         <div id="header_in2">
