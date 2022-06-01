@@ -43,6 +43,7 @@
 	$name       = $row["name"];
 	$subject    = $row["subject"];
 	$price    = $row["price"];
+	$imageUrl    = $row["imageUrl"];
 	$content    = $row["content"];		
 	$file_name  = $row["file_name"];
 ?>
@@ -66,10 +67,10 @@
 	    				<textarea name="content"><?=$content?></textarea>
 	    			</span>
 	    		</li>
-	    		<li>
-			        <span class="col1"> 첨부 파일 : </span>
-			        <span class="col2"><?=$file_name?></span>
-			    </li>
+				<li>
+	    			<span class="col1">도서 이미지 : </span>
+	    			<span class="col2"><input name="imageUrl" type="text" value="<?=$imageUrl?>"></span>
+	    		</li>
 	    	    </ul>
 	    	<ul class="buttons">
 				<li><button type="button" onclick="check_input()">수정하기</button></li>

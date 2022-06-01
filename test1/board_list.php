@@ -58,14 +58,12 @@
 	  $name        = $row["name"];
 	  $subject     = $row["subject"];
 	  $price     = $row["price"];
-      if ($row["file_name"])
-      	$file_image = "<img src='./img/book/논어.jpg'>";
-      else
-      	$file_image = " ";
+	  $imageUrl = $row["imageUrl"];
+	  $file_image = "<img src='$imageUrl'>";
 ?>
 				<li>
 					<span class="col1"><?=$number?></span>
-					<span class="col4"><?=$file_image?></span>
+					<span class="col4"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$file_image?></a></span>
 					<span class="col2"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
 					<span class="col7"><?=$price?></span>
 					<span class="col3"><?=$name?></span>

@@ -28,6 +28,8 @@
 	$name      = $row["name"];
 	$regist_day = $row["regist_day"];
 	$price    = $row["price"];
+	$imageUrl    = $row["imageUrl"];
+	$file_image = "<img src='$imageUrl'>";
 	$subject    = $row["subject"];
 	$content    = $row["content"];
 	$file_name    = $row["file_name"];
@@ -44,8 +46,9 @@
 ?>		
 	    <ul id="view_content">
 			<li>
+				<span class="col4"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$file_image?></a></span>
 				<span class="col1"><b>상품명 :</b> <?=$subject?></span>
-				<span class="col2"><?=$name?> | <?=$regist_day?></span>
+				<span class="col2"><b>가격 : </b> <?=$price?></span>
 			</li>
 			<li>
 				<?php
@@ -53,9 +56,6 @@
 						$real_name = $file_copied;
 						$file_path = "./data/".$real_name;
 						$file_size = filesize($file_path);
-
-						echo "▷ 첨부파일 : $file_name ($file_size Byte) &nbsp;&nbsp;&nbsp;&nbsp;
-			       		<a href='download.php?num=$num&real_name=$real_name&file_name=$file_name&file_type=$file_type'>[저장]</a><br><br>";
 			           	}
 				?>
 				<?=$content?>
@@ -64,15 +64,22 @@
 		<?php
             if($userlevel==1) {
             ?>
+			<ul class="buttons">
 				<li><button onclick="location.href='board_modify_form.php?num=<?=$num?>&page=<?=$page?>'">수정</button></li>
 				<li><button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button></li>
 				<li><button onclick="location.href='board_form.php'">글쓰기</button></li>
+				<li><button onclick="location.href='board_list.php?page=<?=$page?>'">목록</button></li>
+			</ul>
             <?php
         	}
+			else {
+				?>
+				<ul class="buttons">
+				<li><button onclick="location.href='board_list.php?page=<?=$page?>'">목록</button></li>
+			</ul>
+			<?php
+			}
             ?>
-	    <ul class="buttons">
-			<li><button onclick="location.href='board_list.php?page=<?=$page?>'">목록</button></li>
-		</ul>
 	</div> <!-- board_box -->
 </section> 
 <footer>

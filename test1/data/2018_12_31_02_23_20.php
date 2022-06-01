@@ -61,7 +61,8 @@
 	  $name        = $row["name"];
 	  $subject     = $row["subject"];
 	  $price     = $row["price"];
-      $regist_day  = $row["regist_day"];
+	  $imageUrl     = $row["imageUrl"];
+      $regist_day  = $row["imageUrl"];
       $hit         = $row["hit"];
 ?>
 				<li>

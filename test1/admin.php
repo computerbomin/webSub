@@ -88,6 +88,7 @@
 	  $name        = $row["name"];
 	  $subject     = $row["subject"];
 	  $price     = $row["price"];
+	  $imageUrl = $row["imageUrl"];
 	  $file_name   = $row["file_name"];
       $regist_day  = $row["regist_day"];
       $regist_day  = substr($regist_day, 0, 10)

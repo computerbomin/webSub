@@ -25,6 +25,12 @@
           document.board_form.content.focus();
           return;
       }
+	  if (!document.board_form.imageUrl.value)
+      {
+          alert("이미지 경로를 입력하세요!");    
+          document.board_form.imageUrl.focus();
+          return;
+      }
       document.board_form.submit();
    }
 </script>
@@ -58,10 +64,12 @@
 	    				<textarea name="content"></textarea>
 	    			</span>
 	    		</li>
-	    		<li>
-			        <span class="col1"> 상품 상세이미지</span>
-			        <span class="col2"><input type="file" name="upfile"></span>
-			    </li>
+				<li id="text_area">	
+	    			<span class="col1">상품 이미지 : </span>
+	    			<span class="col2">
+	    				<textarea name="imageUrl"></textarea>
+	    			</span>
+	    		</li>
 	    	    </ul>
 	    	<ul class="buttons">
 				<li><button type="button" onclick="check_input()">완료</button></li>
