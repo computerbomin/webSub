@@ -3,7 +3,9 @@ include $_SERVER['DOCUMENT_ROOT']."/project/webSub/test1/include/db.php";
 ?>
 
 <?php
-session_start();
+if (!isset($_SESSION)) {
+    session_start();
+}
 if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"];
 else $userid = "";
 if (isset($_SESSION["username"])) $username = $_SESSION["username"];
@@ -17,7 +19,7 @@ else $userpoint = "";
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
-    <title><a href="index.php">땡땡 쇼핑</a></title>
+    <title><a href="index.php">라일락 서점</a></title>
     <link rel="stylesheet" href="/project/webSub/test1/css/common.css" />
 </head>
 <body>
