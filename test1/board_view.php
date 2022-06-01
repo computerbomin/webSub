@@ -61,11 +61,17 @@
 				<?=$content?>
 			</li>		
 	    </ul>
-	    <ul class="buttons">
-				<li><button onclick="location.href='board_list.php?page=<?=$page?>'">목록</button></li>
+		<?php
+            if($userlevel==1) {
+            ?>
 				<li><button onclick="location.href='board_modify_form.php?num=<?=$num?>&page=<?=$page?>'">수정</button></li>
 				<li><button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button></li>
 				<li><button onclick="location.href='board_form.php'">글쓰기</button></li>
+            <?php
+        	}
+            ?>
+	    <ul class="buttons">
+			<li><button onclick="location.href='board_list.php?page=<?=$page?>'">목록</button></li>
 		</ul>
 	</div> <!-- board_box -->
 </section> 
