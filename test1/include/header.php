@@ -26,6 +26,7 @@ else $userpoint = "";
     <header>
         <div id="header_in">
             <div id="logo">
+                <a href="index.php">
                 <img src="/project/webSub/test1/img/logo.png" alt="logo" title="logo" />
             </div>
             <form action="" method="get">

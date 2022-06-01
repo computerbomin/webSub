@@ -142,31 +142,31 @@ nav a {
 
 #catagory_list {
 	width:1200px;
-	height:300px;
+	height:200px;
 	margin-top:20px;
 }
 #catagory_wrap {
-	margin-left:10px;
+	margin-left:20px;
 }
 .catagory_container {
 	float:left;
 	width: 125px;
-	height: 160px;
-	border-top: solid 2px #345391;
+	height: 70px;
+	border-top: solid 1px #345391;
 	border-left: solid 1px #daddde;
 	border-right: solid 1px #daddde;
 	border-bottom: solid 1px #daddde;
 	vertical-align: top;
 	margin-left:20px;
 	text-align: center;
-	font:bold 16px 'malgun gothic';
+	font:bold 12px 'malgun gothic';
   }
 #catagory_wrap {
 	  margin-top:10px;
   }
 .catagory_img {
 	  width:125px;
-	  height:170px;
+	  height:90px;
   }
 .catagory_title {
 	  font:15px 'malgun gothic';

@@ -18,9 +18,11 @@
     }
 
     $subject = $_POST["subject"];
+    $price = $_POST["price"];
     $content = $_POST["content"];
 
 	$subject = htmlspecialchars($subject, ENT_QUOTES);
+	$price = htmlspecialchars($price, ENT_QUOTES);
 	$content = htmlspecialchars($content, ENT_QUOTES);
 
 	$regist_day = date("Y-m-d (H:i)");  // 현재의 '년-월-일-시-분'을 저장
@@ -74,8 +76,8 @@
 	
 	$con = mysqli_connect("localhost", "user1", "12345", "sample");
 
-	$sql = "insert into board (id, name, subject, content, regist_day, hit,  file_name, file_type, file_copied) ";
-	$sql .= "values('$userid', '$username', '$subject', '$content', '$regist_day', 0, ";
+	$sql = "insert into board (id, name, subject, price, content, regist_day, hit,  file_name, file_type, file_copied) ";
+	$sql .= "values('$userid', '$username', '$subject', '$price', '$content', '$regist_day', 0, ";
 	$sql .= "'$upfile_name', '$upfile_type', '$copied_file_name')";
 	mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행
 

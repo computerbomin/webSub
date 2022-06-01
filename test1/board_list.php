@@ -2,30 +2,26 @@
 <html>
 <head> 
 <meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/board.css">
 </head>
 <body> 
 <header>
-    <?php include "header.php";?>
+    <?php include "./include/header.php";?>
 </header>  
 <section>
-	<div id="main_img_bar">
-        <img src="./img/main_img.png">
-    </div>
+
    	<div id="board_box">
 	    <h3>
-	    	게시판 > 목록보기
+	    	상품 > 목록보기
 		</h3>
 	    <ul id="board_list">
 				<li>
 					<span class="col1">번호</span>
-					<span class="col2">제목</span>
+					<span class="col2">상품명</span>
+					<span class="col7">가격</span>
 					<span class="col3">글쓴이</span>
 					<span class="col4">첨부</span>
-					<span class="col5">등록일</span>
-					<span class="col6">조회</span>
 				</li>
 <?php
 	if (isset($_GET["page"]))
@@ -61,8 +57,7 @@
 	  $id          = $row["id"];
 	  $name        = $row["name"];
 	  $subject     = $row["subject"];
-      $regist_day  = $row["regist_day"];
-      $hit         = $row["hit"];
+	  $price     = $row["price"];
       if ($row["file_name"])
       	$file_image = "<img src='./img/file.gif'>";
       else
@@ -71,10 +66,9 @@
 				<li>
 					<span class="col1"><?=$number?></span>
 					<span class="col2"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
+					<span class="col7"><?=$price?></span>
 					<span class="col3"><?=$name?></span>
 					<span class="col4"><?=$file_image?></span>
-					<span class="col5"><?=$regist_day?></span>
-					<span class="col6"><?=$hit?></span>
 				</li>	
 <?php
    	   $number--;
@@ -133,7 +127,7 @@
 	</div> <!-- board_box -->
 </section> 
 <footer>
-    <?php include "footer.php";?>
+    <?php include "./include/footer.php";?>
 </footer>
 </body>
 </html>

@@ -9,7 +9,7 @@
   function check_input() {
       if (!document.board_form.subject.value)
       {
-          alert("제목을 입력하세요!");
+          alert("상품명을 입력하세요!");
           document.board_form.subject.focus();
           return;
       }
@@ -25,7 +25,7 @@
 </head>
 <body> 
 <header>
-    <?php include "header.php";?>
+    <?php include "./include/header.php";?>
 </header>  
 <section>
 	<div id="main_img_bar">
@@ -45,6 +45,7 @@
 	$row = mysqli_fetch_array($result);
 	$name       = $row["name"];
 	$subject    = $row["subject"];
+	$price    = $row["price"];
 	$content    = $row["content"];		
 	$file_name  = $row["file_name"];
 ?>
@@ -55,9 +56,13 @@
 					<span class="col2"><?=$name?></span>
 				</li>		
 	    		<li>
-	    			<span class="col1">제목 : </span>
+	    			<span class="col1">상품명 : </span>
 	    			<span class="col2"><input name="subject" type="text" value="<?=$subject?>"></span>
-	    		</li>	    	
+	    		</li>	 
+				<li>
+	    			<span class="col1">가격 : </span>
+	    			<span class="col2"><input name="price" type="text" value="<?=$price?>"></span>
+	    		</li>	   	
 	    		<li id="text_area">	
 	    			<span class="col1">내용 : </span>
 	    			<span class="col2">
@@ -77,7 +82,7 @@
 	</div> <!-- board_box -->
 </section> 
 <footer>
-    <?php include "footer.php";?>
+    <?php include "./include/footer.php";?>
 </footer>
 </body>
 </html>

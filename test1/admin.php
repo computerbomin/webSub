@@ -87,6 +87,7 @@
       $num         = $row["num"];
 	  $name        = $row["name"];
 	  $subject     = $row["subject"];
+	  $price     = $row["price"];
 	  $file_name   = $row["file_name"];
       $regist_day  = $row["regist_day"];
       $regist_day  = substr($regist_day, 0, 10)
@@ -98,6 +99,7 @@
 			<span class="col4"><?=$subject?></span>
 			<span class="col5"><?=$file_name?></span>
 			<span class="col6"><?=$regist_day?></span>
+			<span class="col7"><?=$pro_num?></span>
 		</li>	
 <?php
    	   $number--;
@@ -110,7 +112,7 @@
 	</div> <!-- admin_box -->
 </section> 
 <footer>
-    <?php include "footer.php";?>
+    <?php include "./include/footer.php";?>
 </footer>
 </body>
 </html>

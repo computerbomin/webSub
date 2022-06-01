@@ -8,15 +8,12 @@
 </head>
 <body> 
 <header>
-    <?php include "header.php";?>
+    <?php include "./include/header.php";?>
 </header>  
 <section>
-	<div id="main_img_bar">
-        <img src="./img/main_img.png">
-    </div>
    	<div id="board_box">
 	    <h3 class="title">
-			게시판 > 내용보기
+			게시판 > 상품보기
 		</h3>
 <?php
 	$num  = $_GET["num"];
@@ -30,6 +27,7 @@
 	$id      = $row["id"];
 	$name      = $row["name"];
 	$regist_day = $row["regist_day"];
+	$price    = $row["price"];
 	$subject    = $row["subject"];
 	$content    = $row["content"];
 	$file_name    = $row["file_name"];
@@ -46,7 +44,7 @@
 ?>		
 	    <ul id="view_content">
 			<li>
-				<span class="col1"><b>제목 :</b> <?=$subject?></span>
+				<span class="col1"><b>상품명 :</b> <?=$subject?></span>
 				<span class="col2"><?=$name?> | <?=$regist_day?></span>
 			</li>
 			<li>
@@ -72,7 +70,7 @@
 	</div> <!-- board_box -->
 </section> 
 <footer>
-    <?php include "footer.php";?>
+    <?php include "./include/footer.php";?>
 </footer>
 </body>
 </html>

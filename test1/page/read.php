@@ -14,4 +14,4 @@
 ?>
 
 
-<?php include  $_SERVER['DOCUMENT_ROOT']."/project/webSub/BUY_TEST/include/footer.php"; ?>
+<?php include  $_SERVER['DOCUMENT_ROOT']."/project/webSub/test1/include/footer.php"; ?>

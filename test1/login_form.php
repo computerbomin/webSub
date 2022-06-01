@@ -2,14 +2,14 @@
 <html>
 <head> 
 <meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
+<title>라일락 서점</title>
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/login.css">
 <script type="text/javascript" src="./js/login.js"></script>
 </head>
 <body> 
 	<header>
-    	<?php include "include/header.php";?>
+    	<?php include "./include/header.php";?>
     </header>
 	<section>
 		<div id="main_img_bar">
@@ -34,7 +34,7 @@
         </div> <!-- main_content -->
 	</section> 
 	<footer>
-    	<?php include "footer.php";?>
+    	<?php include "./include/footer.php";?>
     </footer>
 </body>
 </html>

@@ -2,15 +2,21 @@
 <html>
 <head> 
 <meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
+<title>라일락 서점</title>
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/board.css">
 <script>
   function check_input() {
       if (!document.board_form.subject.value)
       {
-          alert("제목을 입력하세요!");
+          alert("상품명을 입력하세요!");
           document.board_form.subject.focus();
+          return;
+      }
+	  if (!document.board_form.price.value)
+      {
+          alert("가격을 입력하세요!");
+          document.board_form.price.focus();
           return;
       }
       if (!document.board_form.content.value)
@@ -25,11 +31,9 @@
 </head>
 <body> 
 <header>
-    <?php include "include/header.php";?>
+    <?php include "./include/header.php";?>
 </header>  
 <section>
-	<div id="main_img_bar">
-    </div>
    	<div id="board_box">
 	    <h3 id="board_title">
 	    		게시판 > 글 쓰기
@@ -41,17 +45,21 @@
 					<span class="col2"><?=$username?></span>
 				</li>		
 	    		<li>
-	    			<span class="col1">제목 : </span>
+	    			<span class="col1">상품명 : </span>
 	    			<span class="col2"><input name="subject" type="text"></span>
-	    		</li>	    	
+	    		</li>
+				<li>
+	    			<span class="col1">상품 가격 : </span>
+	    			<span class="col2"><input name="price" type="text"></span>
+	    		</li>		    	
 	    		<li id="text_area">	
-	    			<span class="col1">내용 : </span>
+	    			<span class="col1">추가설명 : </span>
 	    			<span class="col2">
 	    				<textarea name="content"></textarea>
 	    			</span>
 	    		</li>
 	    		<li>
-			        <span class="col1"> 첨부 파일</span>
+			        <span class="col1"> 상품 상세이미지</span>
 			        <span class="col2"><input type="file" name="upfile"></span>
 			    </li>
 	    	    </ul>
@@ -63,7 +71,7 @@
 	</div> <!-- board_box -->
 </section> 
 <footer>
-    <?php include "footer.php";?>
+    <?php include "./include/footer.php";?>
 </footer>
 </body>
 </html>

@@ -117,33 +117,29 @@ CREATE TABLE `member` (
 
 CREATE TABLE `product` (
   `pro_num` int(11) NOT NULL COMMENT '상품번호',
-  `pro_manuname` varchar(50) NOT NULL COMMENT '제조사명',
-  `pro_salname` varchar(50) NOT NULL COMMENT '판매업체명',
+  `pro_manuname` varchar(50) NOT NULL COMMENT '출판사명',
   `pro_name` varchar(200) NOT NULL COMMENT '상품명',
   `pro_class` varchar(20) NOT NULL COMMENT '분류',
-  `pro_available` int(11) NOT NULL COMMENT '재고수량',
   `pro_price` int(11) NOT NULL COMMENT '상품가격',
-  `pro_indate` date NOT NULL COMMENT '입고날짜',
   `pro_proimg` varchar(100) NOT NULL COMMENT '제품이미지',
   `pro_detailimg` varchar(100) NOT NULL COMMENT '상품상세정보',
-  `pro_total` int(11) NOT NULL COMMENT '구매횟수'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- 테이블의 덤프 데이터 `product`
 --
 
-INSERT INTO `product` (`pro_num`, `pro_manuname`, `pro_salname`, `pro_name`, `pro_class`, `pro_available`, `pro_price`, `pro_indate`, `pro_proimg`, `pro_detailimg`, `pro_total`) VALUES
-(1, '삼성전자', '삼성디지털프라자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 30, 70000, '2021-05-29', 'ssd970', 'ssd970_detail', 1),
-(2, '삼성전자', '삼성디지털프라자', 'Samsung DDR3L 8GB RAM', '컴퓨터', 30, 31520, '2021-05-29', 'ddr3l_8g', 'ddr3l_8g_detail', 4),
-(3, '삼성전자', '삼성디지털프라자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 30, 70000, '2021-05-29', 'ssd970', 'ssd970_detail', 1),
-(4, '삼성전자', '삼성디지털프라자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 30, 70000, '2021-05-29', 'ssd970', 'ssd970_detail', 1),
-(5, '삼성전자', '삼성디지털프라자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 30, 70000, '2021-05-29', 'ssd970', 'ssd970_detail', 1),
-(6, '삼성전자', '삼성디지털프라자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 30, 70000, '2021-05-29', 'ssd970', 'ssd970_detail', 1),
-(7, '삼성전자', '삼성디지털프라자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 30, 70000, '2021-05-29', 'ssd970', 'ssd970_detail', 1),
-(8, '삼성전자', '삼성디지털프라자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 30, 70000, '2021-05-29', 'ssd970', 'ssd970_detail', 1),
-(9, '삼성전자', '삼성디지털프라자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 30, 70000, '2021-05-29', 'ssd970', 'ssd970_detail', 1),
-(10, '삼성전자', '삼성디지털프라자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 30, 70000, '2021-05-29', 'ssd970', 'ssd970_detail', 1);
+INSERT INTO `product` (`pro_num`, `pro_manuname`, `pro_name`, `pro_class`, `pro_price`, `pro_proimg`, `pro_detailimg`) VALUES
+(1, '삼성전자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 70000, 'ssd970', 'ssd970_detail'),
+(2, '삼성전자', 'Samsung DDR3L 8GB RAM', '컴퓨터', 31520, 'ddr3l_8g', 'ddr3l_8g_detail'),
+(3, '삼성전자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 70000, 'ssd970', 'ssd970_detail'),
+(4, '삼성전자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 70000, 'ssd970', 'ssd970_detail'),
+(5, '삼성전자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 70000, 'ssd970', 'ssd970_detail'),
+(6, '삼성전자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 70000, 'ssd970', 'ssd970_detail'),
+(7, '삼성전자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 70000, 'ssd970', 'ssd970_detail'),
+(8, '삼성전자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 70000, 'ssd970', 'ssd970_detail'),
+(9, '삼성전자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 70000, 'ssd970', 'ssd970_detail'),
+(10, '삼성전자', 'Samsung SSD 970 EVO M.2', '컴퓨터', 70000, 'ssd970', 'ssd970_detail');
 
 -- --------------------------------------------------------
 

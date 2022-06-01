@@ -60,6 +60,7 @@
 	  $id          = $row["id"];
 	  $name        = $row["name"];
 	  $subject     = $row["subject"];
+	  $price     = $row["price"];
       $regist_day  = $row["regist_day"];
       $hit         = $row["hit"];
 ?>
@@ -115,7 +116,7 @@
 	</div> <!-- message_box -->
 </section> 
 <footer>
-    <?php include "footer.php";?>
+    <?php include "./include/footer.php";?>
 </footer>
 </body>
 </html>

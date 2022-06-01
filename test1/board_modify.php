@@ -3,10 +3,11 @@
     $page = $_GET["page"];
 
     $subject = $_POST["subject"];
+    $price = $_POST["price"];
     $content = $_POST["content"];
           
     $con = mysqli_connect("localhost", "user1", "12345", "sample");
-    $sql = "update board set subject='$subject', content='$content' ";
+    $sql = "update board set subject='$subject',price='$price', content='$content' ";
     $sql .= " where num=$num";
     mysqli_query($con, $sql);
 
