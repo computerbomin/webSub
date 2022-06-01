@@ -18,10 +18,10 @@
 	    <ul id="board_list">
 				<li>
 					<span class="col1">번호</span>
+					<span class="col4">이미지</span>
 					<span class="col2">상품명</span>
 					<span class="col7">가격</span>
 					<span class="col3">글쓴이</span>
-					<span class="col4">첨부</span>
 				</li>
 <?php
 	if (isset($_GET["page"]))
@@ -59,16 +59,16 @@
 	  $subject     = $row["subject"];
 	  $price     = $row["price"];
       if ($row["file_name"])
-      	$file_image = "<img src='./img/file.gif'>";
+      	$file_image = "<img src='./img/book/논어.jpg'>";
       else
       	$file_image = " ";
 ?>
 				<li>
 					<span class="col1"><?=$number?></span>
+					<span class="col4"><?=$file_image?></span>
 					<span class="col2"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
 					<span class="col7"><?=$price?></span>
 					<span class="col3"><?=$name?></span>
-					<span class="col4"><?=$file_image?></span>
 				</li>	
 <?php
    	   $number--;

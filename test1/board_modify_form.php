@@ -2,7 +2,7 @@
 <html>
 <head> 
 <meta charset="utf-8">
-<title>PHP 프로그래밍 입문</title>
+<title>라일락 서점</title>
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/board.css">
 <script>
@@ -28,9 +28,6 @@
     <?php include "./include/header.php";?>
 </header>  
 <section>
-	<div id="main_img_bar">
-        <img src="./img/main_img.png">
-    </div>
    	<div id="board_box">
 	    <h3 id="board_title">
 	    		게시판 > 글 쓰기
