@@ -21,7 +21,7 @@
 					<span class="col2">아이디</span>
 					<span class="col3">이름</span>
 					<span class="col4">레벨</span>
-					<span class="col5">포인트</span>
+					<span class="col5">		</span>
 					<span class="col6">가입일</span>
 					<span class="col7">수정</span>
 					<span class="col8">삭제</span>
@@ -71,7 +71,7 @@
 			<span class="col2">번호</span>
 			<span class="col3">이름</span>
 			<span class="col4">제목</span>
-			<span class="col5">첨부파일명</span>
+			<span class="col5">			</span>
 			<span class="col6">작성일</span>
 		</li>
 		<form method="post" action="admin_board_delete.php">
