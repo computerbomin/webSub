@@ -26,7 +26,7 @@ else $userpoint = "";
     <header>
         <div id="header_in">
             <div id="logo">
-                <img src="/project/webSub/test1/img/logo.jpg" alt="logo" title="logo" width="100" left="10px" />
+                <img src="/project/webSub/test1/img/logo.jpg" alt="logo" title="logo" width="100" left="10px" onclick="location.href='index.php'" />
             </div>
             <form action="search.php" method="get">
                 <div id="search_bar">
@@ -68,6 +68,7 @@ else $userpoint = "";
                     <ul>
                         <li><a href="./order/board_list.php">주문자정보</a></li>
                         <li><a href="">장바구니</a></li>
+                        <li><a href="./customer_center.php">고객센터</a></li>
                     </ul>
                 </nav>
             </div>
