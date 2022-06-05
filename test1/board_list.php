@@ -34,7 +34,7 @@
 	$result = mysqli_query($con, $sql);
 	$total_record = mysqli_num_rows($result); // 전체 글 수
 
-	$scale = 10;
+	$scale = 5;
 
 	// 전체 페이지 수($total_page) 계산 
 	if ($total_record % $scale == 0)     

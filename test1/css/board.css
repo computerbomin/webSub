@@ -32,3 +32,6 @@
 #view_content .col1 { margin: 80px 100px 80px 200px;}
 #view_content li:nth-child(2) {	padding: 15px 15px 80px 15px; border-bottom: solid 1px #cccccc; }
 #view_content li:nth-child(3) button { padding: 5px 20px; margin: 15px 0 40px 720px; cursor: pointer; }
+img {
+	height: 150px;
+}

@@ -61,13 +61,13 @@
 	    		<li id="text_area">	
 	    			<span class="col1">추가설명 : </span>
 	    			<span class="col2">
-	    				<textarea name="content"></textarea>
+	    				<textarea name="content" placeholder="책의 설명을 추가하시오."></textarea>
 	    			</span>
 	    		</li>
 				<li id="text_area">	
 	    			<span class="col1">상품 이미지 : </span>
 	    			<span class="col2">
-	    				<textarea name="imageUrl"></textarea>
+	    				<textarea name="imageUrl" placeholder="이미지의 경로를 입력하시오						  예) ./img/book/book1.jpg"></textarea>
 	    			</span>
 	    		</li>
 	    	    </ul>

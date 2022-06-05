@@ -19,14 +19,14 @@ else $userpoint = "";
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
-    <title><a href="index.php">라일락 서점</a></title>
+    <title>라일락 서점</title>
     <link rel="stylesheet" href="/project/webSub/test1/css/common.css" />
 </head>
 <body>
     <header>
         <div id="header_in">
             <div id="logo">
-                <img src="/project/webSub/test1/img/logo.jpg" alt="logo" title="logo" width="100" left="10px" onclick="location.href='index.php'" />
+                <a href="index.php"><input type="image" src="/project/webSub/test1/img/logo.jpg" alt="logo" title="logo" width="100" left="10px"/></a>
             </div>
             <form action="search.php" method="get">
                 <div id="search_bar">
@@ -46,7 +46,7 @@ else $userpoint = "";
                             <li><a href="member_form.php">회원 가입</a> </li>
                             <?php
                         } else {
-                            $logged = $username."(".$userid.")님";
+                            $logged = $username." 님";
                             ?>
                             <li><?=$logged?></li>
                             <li><a href="logout.php">로그아웃</a> </li>
@@ -66,8 +66,6 @@ else $userpoint = "";
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="./order/board_list.php">주문자정보</a></li>
-                        <li><a href="">장바구니</a></li>
                         <li><a href="./customer_center.php">고객센터</a></li>
                     </ul>
                 </nav>

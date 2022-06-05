@@ -100,7 +100,6 @@
 			<span class="col4"><?=$subject?></span>
 			<span class="col5"><?=$file_name?></span>
 			<span class="col6"><?=$regist_day?></span>
-			<span class="col7"><?=$pro_num?></span>
 		</li>	
 <?php
    	   $number--;
